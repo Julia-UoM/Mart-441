@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #fdf6ff;
+}
+
+/* Hero with dreamy overlay */
+.hero {
+  height: 100vh;
+  background-image: url("imgs/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero-text {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 182, 193, 0.7),
+    rgba(173, 216, 230, 0.7)
+  );
+  padding: 2.5rem 3.5rem;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(255, 182, 193, 0.6);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+/* Sections */
+.section {
+  padding: 4rem 2rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: #7b5cff;
+}
+
+/* Light pastel section */
+.light {
+  background: linear-gradient(
+    180deg,
+    #fdf6ff,
+    #e6f7ff
+  );
+  color: #444;
+}
+
+/* Dark but still pastel */
+.dark {
+  background: linear-gradient(
+    180deg,
+    #cdb4ff,
+    #ffc8dd
+  );
+  color: #2b1b3f;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #bde0fe;
+  color: #4a4a4a;
+}
+
+/* Breakpoint 1: tablets */
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 6rem;
+  }
+
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+/* Breakpoint 2: desktops */
+@media (min-width: 1024px) {
+  .section {
+    max-width: 900px;
+    margin: auto;
+  }
+}
