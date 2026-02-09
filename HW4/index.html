@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiet Frames — Choose Your Own Adventure</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="app">
+    <header class="header">
+      <h1 id="title">Quiet Frames</h1>
+      <p class="subtitle">A choose-your-own-adventure built from small moments.</p>
+    </header>
+
+    <section class="scene">
+      <img
+        id="sceneImage"
+        class="scene__image"
+        src="images/window.jpg"
+        alt="Story scene image"
+      />
+      <div class="scene__overlay">
+        <p class="status">
+          Energy: <span id="energyValue">3</span> · Note: <span id="trinketValue">none</span>
+        </p>
+        <p class="story" id="storyText"></p>
+      </div>
+    </section>
+
+    <section class="choices">
+      <h2 class="choices__title">Choose:</h2>
+      <div id="choiceButtons" class="choices__buttons"></div>
+      <button id="restartBtn" class="restart hidden" type="button">Restart</button>
+    </section>
+
+    <footer class="footer">
+      <small>Each choice updates the DOM (text, image, buttons, and status).</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
