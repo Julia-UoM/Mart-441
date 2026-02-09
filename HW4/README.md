@@ -1,1 +1,6 @@
+<b> AI Reflection: </b>
+When plugging in the instructions for this assignment, ChatGPT produced a complex choose your own adventure game with many steps and an elaborate story. Although this was impressive, I felt that it was overkill for this assignment and the level of detail was not required. There was also something about the story that had kind of an "uncanny valley" vibe, technically everything was correct but emotionally it felt off.
 
+
+<b> Successes and challenges: </b>
+The biggest success of this project was getting the file structure set up correctly. Keeping everything organized inside the assignment folder and making sure images, CSS, and JavaScript paths all worked as expected made the project easier to manage and test. A challenge I ran into was accidentally starting this assignment in its own repository instead of placing it inside my class repository. To overcome this I had to carefully copy the files over, recreate the folder structure, and double-check that everything still worked, which helped reinforce my understanding of how repositories and relative paths function. Another challenge I had was knowing where to stop for this project. To me it feels a little clunky and unfinished, but I also feel that I could expand on this game concept literally forever, so choosing a stopping point was difficult.
