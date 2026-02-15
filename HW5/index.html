@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiet Frames — Text Adventure</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>Quiet Frames</h1>
+      <p class="subtitle">Type a choice. Press Enter. The page responds.</p>
+    </header>
+
+    <section class="scene">
+      <img id="sceneImage" class="scene__image" src="images/window.jpg" alt="Scene image" />
+      <div class="scene__overlay">
+        <p class="status">
+          Energy: <span id="energyValue">3</span> ·
+          Detail: <span id="detailValue">none</span> ·
+          Step count: <span id="stepValue">0</span>
+        </p>
+        <p id="storyText" class="story"></p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="prompt">
+        <div class="prompt__label">Type one of these options:</div>
+        <div id="optionsLine" class="prompt__options"></div>
+      </div>
+
+      <div class="inputRow">
+        <input
+          id="userInput"
+          class="input"
+          type="text"
+          placeholder="Type your choice (ex: window)"
+          autocomplete="off"
+        />
+        <button id="submitBtn" class="btn" type="button">Submit</button>
+        <button id="restartBtn" class="btn btn--ghost hidden" type="button">Restart</button>
+      </div>
+
+      <p id="hintText" class="hint"></p>
+    </section>
+
+    <footer class="footer">
+      <small>HW5: textbox input + DOM updates + logic + loop + functions + restart.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
