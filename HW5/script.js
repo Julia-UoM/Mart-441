@@ -1,11 +1,11 @@
-// ---------- State ----------
+// ------ State ------
 let energy = 3;
 let detail = "none";
 let stepCount = 0;
 let currentNode = "start";
 let awaitingRestart = false;
 
-// ---------- DOM ----------
+// ------ DOM -----
 const storyTextEl = document.getElementById("storyText");
 const optionsLineEl = document.getElementById("optionsLine");
 const hintTextEl = document.getElementById("hintText");
@@ -18,7 +18,7 @@ const userInputEl = document.getElementById("userInput");
 const submitBtn = document.getElementById("submitBtn");
 const restartBtn = document.getElementById("restartBtn");
 
-// ---------- Story Data ----------
+// -------- Story Data --------
 const nodes = {
   start: {
     text: "You stand still longer than you meant to. The light has changed, but the room hasn’t.",
@@ -66,14 +66,14 @@ const nodes = {
   },
 
   pause: {
-    text: "You let the moment stay unfinished. You don’t need an explanation—just a frame.",
+    text: "You let the moment stay unfinished. You don’t need an explanation.",
     img: "images/dawn.jpg",
     theme: "dawn",
     options: ["outside", "end", "start"]
   },
 
   outside: {
-    text: "Outside, the ground becomes the first thing you notice. Cracks, shadows, your pace.",
+    text: "Outside, the ground becomes the first thing you notice. Cracks, shadows, your footsteps.",
     img: "images/sidewalk.jpg",
     theme: "dawn",
     options: ["walk", "start", "end"],
@@ -95,7 +95,7 @@ const nodes = {
   }
 };
 
-// ---------- Functions (with params + return) ----------
+// ---- Functions ------
 function normalizeChoice(rawText) {
   // returns a value (required)
   return rawText.trim().toLowerCase();
@@ -137,7 +137,7 @@ function renderNode(nodeKey) {
   setTheme(node.theme);
 
   optionsLineEl.textContent = formatOptions(node.options);
-  hintTextEl.textContent = "Tip: You can type the option words exactly as shown.";
+  hintTextEl.textContent = "Tip: please type the option words exactly as shown.";
 
   updateStatus();
 
@@ -164,7 +164,7 @@ function restart() {
   renderNode("start");
 }
 
-// ---------- Input Handler ----------
+// -------- Input Handler --------
 function handleInput() {
   const choice = normalizeChoice(userInputEl.value);
 
