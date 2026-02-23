@@ -1,2 +1,2 @@
-<center><b>Gen AI Reflection</b></center><p></p>
+<b>Gen AI Reflection</b><p></p>
 
