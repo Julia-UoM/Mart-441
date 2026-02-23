@@ -1,2 +1,6 @@
 <b>Gen AI Reflection</b><p></p>
+When I asked ChatGPT to replicate this project the result was (as usual) more complicated than what we actually needed for this stage of the assignment. Unprompted, it included extra structure and logic that went beyond the instructions of building the board with arrays and randomization. While it worked functionally, it felt overly polished and excessive styling. <br>
 
+That said, ChatCPT did provide helpful insight into a functional structure for the memory board. Seeing the arrays, shuffle logic, and click handling laid out clearly and having each function explained back to me made it easier to understand how the system fits together and I borrowed from the structure that it provided. It was especially useful to see how each blank tile uses its index to reference the shuffled image array, and how that connection drives the reveal behavior. <br>
+
+Most of my troubleshooting focused on array indexing and the shuffle logic. Making sure each tile’s index correctly referenced the shuffled array, and confirming that each image still appeared exactly twice after randomization was initially confusing. After testing and walking through the code more slowly, I feel like I have a much better understanding of how the logic works and why it functions correctly. <br>
