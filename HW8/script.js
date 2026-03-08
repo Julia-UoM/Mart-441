@@ -65,17 +65,20 @@ let nextButton = document.getElementById("nextButton");
 let lastIndex = -1;
 
 // FUNCTION TO SHOW RANDOM SLIDE
-function showRandomSlide() {
+let currentIndex;
 
-  let randomIndex;
+// Show random slide on page load
+function showRandomStart() {
 
-  do {
-    randomIndex = Math.floor(Math.random() * slides.length);
-  } while (randomIndex === lastIndex);
+  currentIndex = Math.floor(Math.random() * slides.length);
 
-  lastIndex = randomIndex;
+  displaySlide(currentIndex);
+}
 
-  let slide = slides[randomIndex];
+// Function to display a slide
+function displaySlide(index) {
+
+  let slide = slides[index];
 
   slideImage.src = slide.image;
   slideTitle.textContent = slide.title;
@@ -84,9 +87,21 @@ function showRandomSlide() {
   slideYear.textContent = slide.year;
 }
 
-// SHOW ONE WHEN PAGE LOADS
-showRandomSlide();
+// Button moves to next slide in order
+function nextSlide() {
 
-// BUTTON EVENT
-nextButton.addEventListener("click", showRandomSlide);
+  currentIndex++;
+
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  }
+
+  displaySlide(currentIndex);
+}
+
+// Random slide when page loads
+showRandomStart();
+
+// Button click
+nextButton.addEventListener("click", nextSlide);
 
