@@ -1,0 +1,91 @@
+// CLASS
+class Slide {
+  constructor(title, image, description, author, year) {
+    this.title = title;
+    this.image = image;
+    this.description = description;
+    this.author = author;
+    this.year = year;
+  }
+}
+
+// OBJECTS
+
+let slide1 = new Slide(
+  "Dropping a Han Dynasty Urn",
+  "images/slide1.jpg",
+  "This photograph shows Ai Weiwei dropping and shattering a 2,000-year-old ceremonial urn. The work questions how societies value tradition, history, and cultural authority. By destroying an ancient object, Ai challenges the idea that history must always be preserved rather than questioned.",
+  "Ai Weiwei",
+  "1995"
+);
+
+let slide2 = new Slide(
+  "Sunflower Seeds",
+  "images/slide2.jpg",
+  "This installation consists of millions of hand-painted porcelain sunflower seeds made by artisans in China. From a distance they appear identical, but each one is unique. The work reflects on mass production, collective labor, and individuality within large political systems.",
+  "Ai Weiwei",
+  "2010"
+);
+
+let slide3 = new Slide(
+  "Atomic Bomb Damage – Wristwatch Stopped at 11:02",
+  "images/slide3.jpg",
+  "This photograph shows a wristwatch damaged by the atomic bombing of Nagasaki, frozen at the exact moment the explosion occurred. The image turns an ordinary object into a symbol of the human cost of nuclear warfare.",
+  "Shomei Tomatsu",
+  "approx. 1961 (object from 1945)"
+);
+
+let slide4 = new Slide(
+  "Myth of Tomorrow",
+  "images/slide4.jpg",
+  "This large mural depicts a skeleton exploding from a nuclear blast. Okamoto created the work during the Cold War as a warning about nuclear weapons and technological destruction.",
+  "Taro Okamoto",
+  "1968"
+);
+
+let slide5 = new Slide(
+  "American Gothic, Washington D.C.",
+  "images/slide5.jpg",
+  "This photograph shows Ella Watson, a government cleaning worker standing in front of an American flag holding a mop and broom. Gordon Parks created the image to highlight racial inequality in the United States.",
+  "Gordon Parks",
+  "1942"
+);
+
+// ARRAY
+let slides = [slide1, slide2, slide3, slide4, slide5];
+
+// DOM ELEMENTS
+let slideImage = document.getElementById("slideImage");
+let slideTitle = document.getElementById("slideTitle");
+let slideDescription = document.getElementById("slideDescription");
+let slideAuthor = document.getElementById("slideAuthor");
+let slideYear = document.getElementById("slideYear");
+let nextButton = document.getElementById("nextButton");
+
+let lastIndex = -1;
+
+// FUNCTION TO SHOW RANDOM SLIDE
+function showRandomSlide() {
+
+  let randomIndex;
+
+  do {
+    randomIndex = Math.floor(Math.random() * slides.length);
+  } while (randomIndex === lastIndex);
+
+  lastIndex = randomIndex;
+
+  let slide = slides[randomIndex];
+
+  slideImage.src = slide.image;
+  slideTitle.textContent = slide.title;
+  slideDescription.textContent = slide.description;
+  slideAuthor.textContent = slide.author;
+  slideYear.textContent = slide.year;
+}
+
+// SHOW ONE WHEN PAGE LOADS
+showRandomSlide();
+
+// BUTTON EVENT
+nextButton.addEventListener("click", showRandomSlide);
