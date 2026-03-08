@@ -89,3 +89,4 @@ showRandomSlide();
 
 // BUTTON EVENT
 nextButton.addEventListener("click", showRandomSlide);
+
