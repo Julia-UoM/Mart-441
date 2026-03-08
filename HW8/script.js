@@ -28,27 +28,27 @@ let slide2 = new Slide(
 );
 
 let slide3 = new Slide(
-  "Atomic Bomb Damage – Wristwatch Stopped at 11:02",
+  "American Gothic, Washington D.C.",
   "images/slide3.jpg",
-  "This photograph shows a wristwatch damaged by the atomic bombing of Nagasaki, frozen at the exact moment the explosion occurred. The image turns an ordinary object into a symbol of the human cost of nuclear warfare.",
+  "This photograph shows Ella Watson, a government cleaning worker standing in front of an American flag while holding a mop and broom. Gordon Parks created the image to highlight racial inequality in the United States. It critiques the gap between American ideals and the reality of segregation.",
+  "Gordon Parks",
+  "1942"
+);
+
+let slide4 = new Slide(
+  "Atomic Bomb Damage – Wristwatch Stopped at 11:02",
+  "images/slide4.jpg",
+  "This photograph shows a wristwatch damaged by the atomic bombing of Nagasaki, frozen at the exact moment the explosion occurred. The image turns an ordinary object into a symbol of the human cost of nuclear warfare. It reminds viewers how war affects everyday lives and historical memory.",
   "Shomei Tomatsu",
   "approx. 1961 (object from 1945)"
 );
 
-let slide4 = new Slide(
+let slide5 = new Slide(
   "Myth of Tomorrow",
-  "images/slide4.jpg",
-  "This large mural depicts a skeleton exploding from a nuclear blast. Okamoto created the work during the Cold War as a warning about nuclear weapons and technological destruction.",
+  "images/slide5.jpg",
+  "This large mural depicts a skeleton exploding from a nuclear blast. Okamoto created the work during the Cold War as a warning about nuclear weapons and technological destruction. The mural encourages viewers to reflect on the consequences of nuclear warfare and technological power.",
   "Taro Okamoto",
   "1968"
-);
-
-let slide5 = new Slide(
-  "American Gothic, Washington D.C.",
-  "images/slide5.jpg",
-  "This photograph shows Ella Watson, a government cleaning worker standing in front of an American flag holding a mop and broom. Gordon Parks created the image to highlight racial inequality in the United States.",
-  "Gordon Parks",
-  "1942"
 );
 
 // ARRAY
