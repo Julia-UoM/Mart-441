@@ -10,7 +10,6 @@ class Slide {
 }
 
 // OBJECTS
-
 let slide1 = new Slide(
   "Dropping a Han Dynasty Urn",
   "images/slide1.jpg",
@@ -62,33 +61,31 @@ let slideAuthor = document.getElementById("slideAuthor");
 let slideYear = document.getElementById("slideYear");
 let nextButton = document.getElementById("nextButton");
 
-let lastIndex = -1;
-// FUNCTION TO SHOW RANDOM SLIDE
+// RANDOM SLIDE LOGIC
 let lastIndex = -1;
 
 function showRandomSlide() {
-
   let randomIndex;
 
-  // keep picking until it is different from the previous slide
   do {
     randomIndex = Math.floor(Math.random() * slides.length);
-  } while (randomIndex === lastIndex);
+  } while (randomIndex === lastIndex && slides.length > 1);
 
   lastIndex = randomIndex;
 
   let slide = slides[randomIndex];
 
   slideImage.src = slide.image;
+  slideImage.alt = slide.title;
   slideTitle.textContent = slide.title;
   slideDescription.textContent = slide.description;
   slideAuthor.textContent = slide.author;
   slideYear.textContent = slide.year;
 }
 
-// show one slide when page loads
+// SHOW ONE ON PAGE LOAD
 showRandomSlide();
 
-// button click
+// BUTTON CLICK
 nextButton.addEventListener("click", showRandomSlide);
 
