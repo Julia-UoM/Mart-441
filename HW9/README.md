@@ -1,1 +1,3 @@
+<b>  GEN AI REFLECTION</b> 
 
+I used Gen AI to help break this assignment down and get a basic structure working. There were a lot of moving parts with jQuery, timers, arrays, animations, so it helped me get something functional without getting (and staying) stuck. From there, I adjusted it to fit my own idea, which was more of a spiritual/yoga-inspired “wellness” theme as next month I am graduating from a 200hr yoga teacher training. I chose the images, wrote the text, changed the pacing so it felt calmer/went more slowly, and tweaked the visuals to make it feel more intentional. Gen AI assisted with my technical setup, and was used as a tool to help explain any jQuery questions I had along the way. The overall concept, aesthetic, and final decisions were my own. 
