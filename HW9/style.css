@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(to bottom, #7c8c7a, #b8cbb8, #e8dfd1);
+  overflow: hidden;
+  color: white;
+}
+
+#poster {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  margin: 0;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+#artImage {
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  width: 320px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.25);
+}
+
+#textBox {
+  position: absolute;
+  top: 410px;
+  left: 120px;
+  font-size: 28px;
+  background: rgba(255,255,255,0.18);
+  color: white;
+  padding: 14px 18px;
+  border-radius: 14px;
+}
+
+#shape {
+  position: absolute;
+  top: 180px;
+  left: 650px;
+  width: 140px;
+  height: 140px;
+  background: #d6c2a1;
+  border-radius: 50%;
+  opacity: 0.85;
+}
