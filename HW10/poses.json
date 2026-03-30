@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Tree Pose",
+    "type": "Balance",
+    "benefit": "Improves focus and stability",
+    "difficulty": "Beginner"
+  },
+  {
+    "name": "Child's Pose",
+    "type": "Resting",
+    "benefit": "Calms the mind and stretches the back",
+    "difficulty": "Beginner"
+  },
+  {
+    "name": "Warrior II",
+    "type": "Standing",
+    "benefit": "Builds strength and endurance",
+    "difficulty": "Beginner"
+  },
+  {
+    "name": "Triangle Pose",
+    "type": "Standing",
+    "benefit": "Stretches the legs and side body",
+    "difficulty": "Beginner"
+  },
+  {
+    "name": "Camel Pose",
+    "type": "Backbend",
+    "benefit": "Opens the chest and front body",
+    "difficulty": "Intermediate"
+  },
+  {
+    "name": "Crow Pose",
+    "type": "Arm Balance",
+    "benefit": "Builds arm and core strength",
+    "difficulty": "Advanced"
+  }
+]
