@@ -77,7 +77,6 @@ function init() {
   warmLight.position.set(-4, 5, 6);
   scene.add(warmLight);
 
-  // NEW overhead light (used mostly in day mode)
   overheadLight = new THREE.DirectionalLight(0xffe6d8, 0.0);
   overheadLight.position.set(0, 12, 0);
   scene.add(overheadLight);
