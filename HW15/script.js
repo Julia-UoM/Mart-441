@@ -25,7 +25,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 //
-// ☀️ BRIGHTER LIGHTING (your original feel)
+// 
 //
 
 const hemisphereLight = new THREE.HemisphereLight(0xffffff, 0x666666, 2.5);
@@ -40,7 +40,7 @@ warmLight.position.set(-3, 3, 4);
 scene.add(warmLight);
 
 //
-// 🌳 MODEL LOADING
+//
 //
 
 let sun = null;
@@ -72,7 +72,7 @@ loader.load("models/scene.glb", function (gltf) {
 });
 
 //
-// 🔁 ANIMATION (your original movement)
+// 
 //
 
 let time = 0;
@@ -99,7 +99,7 @@ function animate() {
 animate();
 
 //
-// 📱 RESIZE
+//
 //
 
 window.addEventListener("resize", function () {
